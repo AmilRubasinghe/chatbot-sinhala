@@ -1,0 +1,66 @@
+version: "3.0"
+
+stories:
+
+- story: happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_what_you_want
+
+- story: bad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: good_bye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye 
+
+- story: askfaqlanguages
+  steps:
+  - intent: askfaqlanguages
+  - action: utter_bot_language
+
+- story: how_are_you
+  steps:
+  - intent: askhowdoing
+  - action: utter_bot_happy
+
+- story: are_you_bot
+  steps:
+  - intent: askisbot
+  - intent: askwhoisit
+  - action: utter_iamabot 
+
+- story: bot_name
+  steps:
+  - intent: askwhatismyname
+  - action: utter_botname 
+
+- story: bot_do
+  steps:
+  - intent: askwhatspossible
+  - action: utter_ido 
+
+- story: bot_blame
+  steps:
+  - intent: handle_insult
+  - action: utter_bot_to_blame 
+
+- story: nice_to_meet
+  steps:
+  - intent: nicetomeeyou
+  - action: utter_nice_to_meet  
+
+- story: thanks
+  steps:
+  - intent: thank
+  - action: utter_thanks  

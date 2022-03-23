@@ -1,0 +1,50 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: symptoms check from the form
+  steps:
+  - intent: request_recomandation
+  - action: utter_few_question
+  - action: utter_what_syptoms
+
+- rule: print symtoms
+  steps:
+  - intent: inform_symtoms_submit
+  - action: action_correct_symtoms
+  - action: utter_check_correct_symtoms
+
+- rule: Again symptoms check
+  steps:
+  - intent: no_correct
+  - action: action_clear_symptom_list
+  - action: utter_few_question
+  - action: utter_what_syptoms
+
+
+- rule: Run actions for each symptom list entries
+  steps:
+  - intent: check_symtoms
+  - action: action_symptom_list
+
+- rule: activate restaurant form
+  steps:
+    - intent: yes_correct
+    - action: recomondation_form
+    - active_loop: recomondation_form
+
+- rule: submit form
+  condition:
+  - active_loop: recomondation_form
+  steps:
+    - action: recomondation_form
+    - active_loop: null
+    - action: utter_submit
+    - action: utter_slots_values
+    - action: action_ontalogy_tracker
+

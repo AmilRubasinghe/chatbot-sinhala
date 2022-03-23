@@ -1,0 +1,31 @@
+version: "3.0"
+
+responses:
+  utter_todaydeath:
+  - text: අද ශ්‍රී ලංකාවේ කොවිඩ් මරණ සංඛ්‍යාව {count} වේ.
+  
+  utter_todaypositivecase:
+  - text: අද ශ්‍රී ලංකාවේ {localnewcases} නව කොවිඩ් positive cases ඇත.
+  utter_totalpositivecase:
+  - text: අද ශ්‍රී ලංකාවේ කොවිඩ් positive case ගණන {localtotalcases} කි
+  utter_totaldeath:
+  - text: ශ්‍රී ලංකාවේ මුළු මරණ ගණන {localdeaths} වේ. 
+  utter_individualsinhospital:
+  - text: අද රෝහල් වල සිටින මුළු රෝගින් ගණන {localtotalnumberofindividualsinhospitals} කි.
+  utter_localrecovered:
+  - text: ශ්‍රී ලංකාවේ දැනට සුවය ලැබූ පුද්ගලයින් ගණන {localrecovered} කි.
+  utter_pcrcount:
+  - text: ශ්‍රී ලංකාවේ දැනට කරන ලද මුළු pcr පරීක්ෂණ  ගණන  {totalpcrtestingcount} වේ
+  utter_activecase:
+  - text: ශ්‍රී ලංකාවේ මුළු කොවිඩ් cases ගණන {localactivecases} වේ.
+
+  utter_globalactivecase:
+  - text: ලෝකයේ දැනට ප්‍රතිකාර ලබන කොවිඩ් රෝගීන් ගණන {globalactivecases} කි.
+  utter_globalnewcase:
+  - text: ලෝකයේ නව positive cases ගණන {globalnewcases} වේ.
+  utter_globaltotaldeath:
+  - text: ලෝකයේ දැනට මුළු කොවිඩ් මරණ සංඛ්‍යාව {globaldeths} කි.
+  utter_globalnewdeaths:
+  - text: ලෝකයේ අද කොවිඩ් මරණ සංඛ්‍යාව {globalnewdeath} කි.
+  utter_globalrecovary:
+  - text: ලෝකයේ දැනට සුවය ලැබූ පුද්ගලයින් ගණන {globalrecovery} වේ.

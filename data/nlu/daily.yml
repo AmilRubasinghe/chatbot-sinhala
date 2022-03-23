@@ -1,0 +1,63 @@
+version: "3.0"
+
+nlu:
+- intent: todaydeath
+  examples: |
+    - Today covid death
+    - covid death
+    - covid death today
+    - how many death today
+    - today death count
+- intent:  todaypositivecase
+  examples: |
+    - how many positive case today
+    - today positive case count
+- intent:  totalpositivecase
+  examples: |
+    - how many total positive case
+    - total positive case 
+- intent:  totaldeath
+  examples: |
+    - how many total death
+    - total death count
+- intent:  individualsinhospital
+  examples: |
+    - how many total no of individuals in hospital
+    - total no of individuals in hospital
+- intent:  localrecovered
+  examples: |
+    - how many total recovered
+    - total recovered
+- intent:  pcrcount
+  examples: |
+    - how many total pcr count
+    - total pcr count
+- intent:  activecase
+  examples: |
+    - how many total active cases
+    - total active cases
+
+
+- intent:  globalActivecase
+  examples: |
+    - how many Global total active cases
+    - total global active cases
+
+- intent:  globaldeathcase
+  examples: |
+    - how many Global total death cases
+    - total global death cases
+
+- intent:  globalnewdeath
+  examples: |
+    - how many Global new death
+    - total global new death cases
+
+- intent:  globalnewcase
+  examples: |
+    - how many Global new case
+    - total global new cases
+- intent:  globalrecovery
+  examples: |
+    - how many Global recovery
+    - total global recovery

@@ -1,0 +1,8 @@
+version: "3.0"
+responses:
+  utter_mohdetailsall:
+  - text:  ඔබ සදහන් කළ {cityName} දිස්තික්කයෙ, සෞඛ්‍ය වෛද්‍ය නිලධාරී කාර්යාලයේ දුරකතන අංකය {mohtpNumber1} සහ ලිපිනය {mohaddress1} වේ.
+  # utter_mohtelephoneNumber:
+  # - text: Main MOH office's telephone no is {mohphoneNumber} in {cityName} district
+  # utter_mohtelephoneNumber:
+  # - text: In {Namecity} district, Main MOH office's address is {mohpermenetaddress}
