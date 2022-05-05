@@ -1,0 +1,17 @@
+version: "3.0"
+responses:
+  utter_phidetailsall:
+  - text: |
+      ඔබ සඳහන් කළ {cityName} දිස්ත්‍රික්කයේ, 
+      මහජන සෞඛ්‍ය පරීක්ෂකවරයාගේ නම - {phiName},
+      මහජන සෞඛ්‍ය පරීක්ෂකවරයාගෙ දුරකතන අංකය - {phitpNumber},
+      විද්යුත් තැපෑල ලිපිනය - {phiEmail}, 
+      රාජකාරි ලිපිනය - {phiaddress} වේ.
+  utter_mohdetailsall:
+  - text: |
+      ඔබ සඳහන් කළ {cityName} දිස්ත්‍රික්කයේ, 
+      සෞඛ්‍ය වෛද්‍ය නිලධාරී කාර්යාලයේ දුරකතන අංකය - {mohtpNumber1} 
+      රාජකාරි ලිපිනය - {mohaddress1} වේ.
+ 
+
+  
