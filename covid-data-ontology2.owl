@@ -1,0 +1,2299 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2021/5/covid-data-analysis-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/hp/ontologies/2021/5/covid-data-analysis-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/hp/ontologies/2021/5/covid-data-analysis-ontology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Clinical_diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Confirmed_case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contact_History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country_wise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Covid-19_Patient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#District"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#District_wise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infected_level_1_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infected_level_2_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medical_Worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mild_Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderate_Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_suspected_level_1_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_suspected_level_2_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_symptomatic_level_1_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Non_symptomatic_level_2_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nonsuspected_case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nonsymptomic_case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Probabale_case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Probable_level_1_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Probable_level_2_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Province"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe_Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Statistics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Status"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suspected_case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suspected_level_Recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptomatic_level_1_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptomatic_level_2_recommondation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptomic_case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Travel_History"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccination_Level_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vaccination_Level_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Woman"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Antigen_test_results"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Confirmation_test_results"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Country_statistics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#District_statistics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_Statics_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_Symptom_Of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_diagnosed_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Is_located_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClinicalDiagnosis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClosedContact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDiagnosis"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDistrict"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGender"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHistory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRecommondation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatistics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTestData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTestResults"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTestType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTravelContact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NIC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Postal_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Street_address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#active_cases"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#case_no"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cases"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#confirmed_on"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#country_code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#covid_test_results"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#daily_deaths"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#daily_deseased"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#daily_recovered"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#date"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#diagnosed_on"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fully_vaccinated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hadContactHistory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hadHistory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hadTravelHistory"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSymptoms"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTest"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVaccinated"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#person_id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#phone"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#weight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Antigen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bluish_lips"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C00005"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C000234"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C0008"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C007842"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C009871"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C023451"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C023567"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C234011"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#C890345"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chills"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cured"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Deep_cough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diarrhea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dry_cough"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#False"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fatigue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Headache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Home_quarentine_for_14_days"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hospitalized"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Immidiately_do_a_PCR_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Informe_to_a_hospital_and_then_Immidiately_go_to_the_hospital"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#London"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loss_of_smell"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Loss_of_taste"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maharagama"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muscale_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Negative"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P00012"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P00013"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P00034"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P00098"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P02345"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PCR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pending"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Positive"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R0002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#R0003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shortness_of_breath"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sore_Throat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Southern_Province"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stay_Home_Wear_a_Mask_Keep_2m_distance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Throat_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tired"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#True"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#USA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hard_breathing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stat_USA_0045"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#stat_colombo_0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#උගුරේ_අමාරුව"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#උණ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#කැස්ස"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#සෙම්ප්‍රතිශ්‍යාව"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#හිසරදය"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#හුස්ම_හිරවීම"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Confirmed_case"/>
+        <DataHasValue>
+            <DataProperty IRI="#hasTest"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Contact_History"/>
+        <DataHasValue>
+            <DataProperty IRI="#hadContactHistory"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Covid-19_Patient"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDiagnosis"/>
+            <Class IRI="#Confirmed_case"/>
+        </ObjectAllValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#History"/>
+        <ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hadContactHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hadTravelHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Infected_level_1_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Infected_level_2_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Man"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGender"/>
+                <NamedIndividual IRI="#Male"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Mild"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymptom"/>
+            <Class IRI="#Mild_Symptom"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Moderate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymptom"/>
+            <Class IRI="#Moderate_Symptom"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Non_suspected_level_1_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Non_suspected_level_2_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Non_symptomatic_level_1_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Non_symptomatic_level_2_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Nonsuspected_case"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Nonsymptomic_case"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Probabale_case"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Probable_level_1_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Probable_level_2_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Severe"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasSymptom"/>
+            <Class IRI="#Severe_Symptom"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Symptomatic_level_1_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Symptomatic_level_2_recommondation"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#fully_vaccinated"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasSymptoms"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Symptomic_case"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectMinCardinality cardinality="3">
+                    <ObjectProperty IRI="#hasSymptom"/>
+                    <Class IRI="#Symptom"/>
+                </ObjectMinCardinality>
+                <DataHasValue>
+                    <DataProperty IRI="#hasSymptoms"/>
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+            <DataHasValue>
+                <DataProperty IRI="#hadHistory"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#hasTest"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Test_result"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Negative"/>
+            <NamedIndividual IRI="#Pending"/>
+            <NamedIndividual IRI="#Positive"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Test_type"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Antigen"/>
+            <NamedIndividual IRI="#PCR"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Travel_History"/>
+        <DataHasValue>
+            <DataProperty IRI="#hadTravelHistory"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vaccination_Level_1"/>
+        <DataHasValue>
+            <DataProperty IRI="#fully_vaccinated"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Vaccination_Level_2"/>
+        <DataHasValue>
+            <DataProperty IRI="#fully_vaccinated"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Woman"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#hasGender"/>
+                <NamedIndividual IRI="#Female"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Confirmed_case"/>
+        <Class IRI="#Diagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contact_History"/>
+        <Class IRI="#History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country_wise"/>
+        <Class IRI="#Statistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Covid-19_Patient"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#District"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#District_wise"/>
+        <Class IRI="#Statistics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infected_level_1_recommondation"/>
+        <Class IRI="#Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infected_level_2_recommondation"/>
+        <Class IRI="#Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medical_Worker"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mild"/>
+        <Class IRI="#Risk_level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mild_Symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderate"/>
+        <Class IRI="#Risk_level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderate_Symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_suspected_level_1_recommondation"/>
+        <Class IRI="#Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_suspected_level_2_recommondation"/>
+        <Class IRI="#Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_symptomatic_level_1_recommondation"/>
+        <Class IRI="#Suspected_level_Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Non_symptomatic_level_2_recommondation"/>
+        <Class IRI="#Suspected_level_Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nonsuspected_case"/>
+        <Class IRI="#Diagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nonsymptomic_case"/>
+        <Class IRI="#Suspected_case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Probabale_case"/>
+        <Class IRI="#Diagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Probable_level_1_recommondation"/>
+        <Class IRI="#Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Probable_level_2_recommondation"/>
+        <Class IRI="#Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Province"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Risk_level"/>
+        <Class IRI="#Clinical_diagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe"/>
+        <Class IRI="#Risk_level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe_Symptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suspected_case"/>
+        <Class IRI="#Diagnosis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suspected_level_Recommondation"/>
+        <Class IRI="#Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptomatic_level_1_recommondation"/>
+        <Class IRI="#Suspected_level_Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptomatic_level_2_recommondation"/>
+        <Class IRI="#Suspected_level_Recommondation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Symptomic_case"/>
+        <Class IRI="#Suspected_case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_result"/>
+        <Class IRI="#Test_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_type"/>
+        <Class IRI="#Test_data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Travel_History"/>
+        <Class IRI="#History"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccination_Level_1"/>
+        <Class IRI="#Vaccination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vaccination_Level_2"/>
+        <Class IRI="#Vaccination"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Woman"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Man"/>
+        <Class IRI="#Woman"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Non_suspected_level_1_recommondation"/>
+        <Class IRI="#Suspected_level_Recommondation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Non_symptomatic_level_1_recommondation"/>
+        <Class IRI="#Symptomatic_level_1_recommondation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Nonsymptomic_case"/>
+        <Class IRI="#Symptomic_case"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Vaccination_Level_1"/>
+        <Class IRI="#Vaccination_Level_2"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Severe_Symptom"/>
+        <NamedIndividual IRI="#Bluish_lips"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C00005"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C000234"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C0008"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C007842"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C009871"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C023451"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C023567"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C234011"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#C890345"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_Symptom"/>
+        <NamedIndividual IRI="#Chest_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Chills"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status"/>
+        <NamedIndividual IRI="#Cured"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moderate_Symptom"/>
+        <NamedIndividual IRI="#Deep_cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Moderate_Symptom"/>
+        <NamedIndividual IRI="#Diarrhea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Dry_cough"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test_result"/>
+        <NamedIndividual IRI="#False"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Fever"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Non_symptomatic_level_1_recommondation"/>
+        <NamedIndividual IRI="#Home_quarentine_for_14_days"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Status"/>
+        <NamedIndividual IRI="#Hospitalized"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptomatic_level_1_recommondation"/>
+        <NamedIndividual IRI="#Immidiately_do_a_PCR_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Infected_level_1_recommondation"/>
+        <NamedIndividual IRI="#Informe_to_a_hospital_and_then_Immidiately_go_to_the_hospital"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#London"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Loss_of_smell"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Loss_of_taste"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Maharagama"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Matara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Muscale_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test_result"/>
+        <NamedIndividual IRI="#Negative"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#P00012"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#P00013"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#P00034"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#P00098"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#P02345"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test_result"/>
+        <NamedIndividual IRI="#Positive"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recommondation"/>
+        <NamedIndividual IRI="#R0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recommondation"/>
+        <NamedIndividual IRI="#R0002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Recommondation"/>
+        <NamedIndividual IRI="#R0003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Rid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_Symptom"/>
+        <NamedIndividual IRI="#Shortness_of_breath"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Sore_Throat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Province"/>
+        <NamedIndividual IRI="#Southern_Province"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Non_suspected_level_1_recommondation"/>
+        <NamedIndividual IRI="#Stay_Home_Wear_a_Mask_Keep_2m_distance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Symptom"/>
+        <NamedIndividual IRI="#Throat_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#Tired"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#USA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_Symptom"/>
+        <NamedIndividual IRI="#hard_breathing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country_wise"/>
+        <NamedIndividual IRI="#stat_USA_0045"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#District_wise"/>
+        <NamedIndividual IRI="#stat_colombo_0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#උගුරේ_අමාරුව"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#උණ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#කැස්ස"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#සෙම්ප්‍රතිශ්‍යාව"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mild_Symptom"/>
+        <NamedIndividual IRI="#හිසරදය"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Severe_Symptom"/>
+        <NamedIndividual IRI="#හුස්ම_හිරවීම"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C00005"/>
+        <NamedIndividual IRI="#Chills"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C00005"/>
+        <NamedIndividual IRI="#Dry_cough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C00005"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C00005"/>
+        <NamedIndividual IRI="#Fever"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRecommondation"/>
+        <NamedIndividual IRI="#C000234"/>
+        <NamedIndividual IRI="#Immidiately_do_a_PCR_test"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C000234"/>
+        <NamedIndividual IRI="#Deep_cough"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C000234"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C000234"/>
+        <NamedIndividual IRI="#Loss_of_taste"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Confirmation_test_results"/>
+        <NamedIndividual IRI="#C0008"/>
+        <NamedIndividual IRI="#Positive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#C007842"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C007842"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C007842"/>
+        <NamedIndividual IRI="#Fever"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C007842"/>
+        <NamedIndividual IRI="#Tired"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Confirmation_test_results"/>
+        <NamedIndividual IRI="#C023567"/>
+        <NamedIndividual IRI="#Positive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRecommondation"/>
+        <NamedIndividual IRI="#C023567"/>
+        <NamedIndividual IRI="#Informe_to_a_hospital_and_then_Immidiately_go_to_the_hospital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#C023567"/>
+        <NamedIndividual IRI="#Fever"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Confirmation_test_results"/>
+        <NamedIndividual IRI="#C234011"/>
+        <NamedIndividual IRI="#Positive"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#P00012"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#P00013"/>
+        <NamedIndividual IRI="#Female"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#P00034"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#P00098"/>
+        <NamedIndividual IRI="#Female"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGender"/>
+        <NamedIndividual IRI="#P02345"/>
+        <NamedIndividual IRI="#Male"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Rid"/>
+        <NamedIndividual IRI="#Fatigue"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <NamedIndividual IRI="#Rid"/>
+        <NamedIndividual IRI="#Fever"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+        <NamedIndividual IRI="#Maharagama"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#covid_test_results"/>
+        <NamedIndividual IRI="#C00005"/>
+        <Literal>Positive</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hadHistory"/>
+        <NamedIndividual IRI="#C00005"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C00005"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#C000234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#case_no"/>
+        <NamedIndividual IRI="#C000234"/>
+        <Literal>C000234</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fully_vaccinated"/>
+        <NamedIndividual IRI="#C000234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hadHistory"/>
+        <NamedIndividual IRI="#C000234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C000234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTest"/>
+        <NamedIndividual IRI="#C000234"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#C000234"/>
+        <Literal>Jagath</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fully_vaccinated"/>
+        <NamedIndividual IRI="#C0008"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#C007842"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">38</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C007842"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#C007842"/>
+        <Literal>Piyal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#phone"/>
+        <NamedIndividual IRI="#C007842"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">0775689098</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#fully_vaccinated"/>
+        <NamedIndividual IRI="#C009871"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hadHistory"/>
+        <NamedIndividual IRI="#C009871"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C009871"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hadHistory"/>
+        <NamedIndividual IRI="#C023451"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C023451"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C023567"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NIC"/>
+        <NamedIndividual IRI="#C234011"/>
+        <Literal>345623443V</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#C234011"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">34</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hadHistory"/>
+        <NamedIndividual IRI="#C234011"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C234011"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#C234011"/>
+        <Literal>Suman</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hadHistory"/>
+        <NamedIndividual IRI="#C890345"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#C890345"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasTest"/>
+        <NamedIndividual IRI="#C890345"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#P00012"/>
+        <Literal>Kamani</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NIC"/>
+        <NamedIndividual IRI="#P00098"/>
+        <Literal>789067220V</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#P00098"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">57</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#P00098"/>
+        <Literal>Kamani Silva</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NIC"/>
+        <NamedIndividual IRI="#P02345"/>
+        <Literal>897645333V</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#age"/>
+        <NamedIndividual IRI="#P02345"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#P02345"/>
+        <Literal>Saman Kumar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#case_no"/>
+        <NamedIndividual IRI="#R0001"/>
+        <Literal>C023451</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#person_id"/>
+        <NamedIndividual IRI="#R0001"/>
+        <Literal>P00045</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hadHistory"/>
+        <NamedIndividual IRI="#Rid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSymptoms"/>
+        <NamedIndividual IRI="#Rid"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#country_code"/>
+        <NamedIndividual IRI="#Sri_Lanka"/>
+        <Literal>LK</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#active_cases"/>
+        <NamedIndividual IRI="#stat_USA_0045"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3450099</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#daily_deaths"/>
+        <NamedIndividual IRI="#stat_USA_0045"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2678</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#daily_deaths"/>
+        <NamedIndividual IRI="#stat_colombo_0001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#daily_deseased"/>
+        <NamedIndividual IRI="#stat_colombo_0001"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">39</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Antigen_test_results"/>
+        <ObjectProperty IRI="#hasTestResults"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Confirmation_test_results"/>
+        <ObjectProperty IRI="#hasTestResults"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Country_statistics"/>
+        <ObjectProperty IRI="#hasStatistics"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#District_statistics"/>
+        <ObjectProperty IRI="#hasStatistics"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCity"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasClosedContact"/>
+        <ObjectProperty IRI="#hasHistory"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCountry"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDistrict"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTravelContact"/>
+        <ObjectProperty IRI="#hasHistory"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Is_Statics_of"/>
+        <ObjectProperty IRI="#hasStatistics"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Is_Symptom_Of"/>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Is_diagnosed_of"/>
+        <ObjectProperty IRI="#hasDiagnosis"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Is_located_in"/>
+        <ObjectProperty IRI="#hasLocation"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Antigen_test_results"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#Is_diagnosed_of"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTestResults"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasClosedContact"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasTravelContact"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#Is_located_in"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClinicalDiagnosis"/>
+        <Class IRI="#Covid-19_Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClosedContact"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDiagnosis"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGender"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHistory"/>
+        <Class IRI="#Covid-19_Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRecommondation"/>
+        <Class IRI="#Diagnosis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStatistics"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStatus"/>
+        <Class IRI="#Covid-19_Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Covid-19_Patient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTestData"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTestResults"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTestType"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTravelContact"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClinicalDiagnosis"/>
+        <Class IRI="#Clinical_diagnosis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClosedContact"/>
+        <Class IRI="#History"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDiagnosis"/>
+        <Class IRI="#Diagnosis"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGender"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHistory"/>
+        <Class IRI="#History"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRecommondation"/>
+        <Class IRI="#Recommondation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStatistics"/>
+        <Class IRI="#Statistics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStatus"/>
+        <Class IRI="#Status"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTestData"/>
+        <Class IRI="#Test_data"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTestResults"/>
+        <Class IRI="#Test_result"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTestType"/>
+        <Class IRI="#Test_type"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTravelContact"/>
+        <Class IRI="#History"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Postal_code"/>
+        <DataProperty IRI="#address"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Street_address"/>
+        <DataProperty IRI="#address"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#active_cases"/>
+        <DataProperty IRI="#cases"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#confirmed_on"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#daily_deaths"/>
+        <DataProperty IRI="#cases"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#daily_deseased"/>
+        <DataProperty IRI="#cases"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#daily_recovered"/>
+        <DataProperty IRI="#cases"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#diagnosed_on"/>
+        <DataProperty IRI="#date"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hadContactHistory"/>
+        <DataProperty IRI="#hadHistory"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hadTravelHistory"/>
+        <DataProperty IRI="#hadHistory"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#NIC"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#age"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dateOfBirth"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#weight"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NIC"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#case_no"/>
+        <Class IRI="#Diagnosis"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#case_no"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#cases"/>
+        <Class IRI="#Statistics"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#country_code"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#covid_test_results"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateOfBirth"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fully_vaccinated"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hadContactHistory"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hadHistory"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hadTravelHistory"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSymptoms"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTest"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVaccinated"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#person_id"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#phone"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#weight"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#NIC"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#case_no"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cases"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#country_code"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#covid_test_results"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#date"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fully_vaccinated"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hadContactHistory"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hadHistory"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hadTravelHistory"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSymptoms"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTest"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVaccinated"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#person_id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#phone"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#weight"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DisjointDataProperties>
+        <DataProperty IRI="#daily_deseased"/>
+        <DataProperty IRI="#daily_recovered"/>
+    </DisjointDataProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Clinical_diagnosis</IRI>
+        <Literal>Disease condition of a patient based on symptoms</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Clinical_diagnosis</IRI>
+        <Literal>Clinical Diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Confirmed_case</IRI>
+        <Literal>Covid Confirmed Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contact_History</IRI>
+        <Literal>Contact History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Covid-19_Patient</IRI>
+        <Literal>Patient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Diagnosis</IRI>
+        <Literal>Categorize reported cases based on symptoms, backgroud and test results</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Diagnosis</IRI>
+        <IRI>#Diagnosis</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#History</IRI>
+        <Literal>Backkgroud history of a person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#History</IRI>
+        <Literal>History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Infected_level_1_recommondation</IRI>
+        <Literal>Infected Level 1 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Infected_level_2_recommondation</IRI>
+        <Literal>Infected Level 2 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mild</IRI>
+        <Literal>Covid Mild Risk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mild</IRI>
+        <Literal>සුළු</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mild_Symptom</IRI>
+        <Literal>Mild Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mild_Symptom</IRI>
+        <Literal>සුළු රෝගලක්ෂණ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Moderate</IRI>
+        <Literal>Moderate Risk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Moderate</IRI>
+        <Literal>මධ්යස්ථ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Moderate_Symptom</IRI>
+        <Literal>Moderate Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Moderate_Symptom</IRI>
+        <Literal>බරපතළ රෝගලක්ෂණ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Non_suspected_level_1_recommondation</IRI>
+        <Literal>Non Suspected Level 1 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Non_suspected_level_2_recommondation</IRI>
+        <Literal>Non Suspected Level 2 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Non_symptomatic_level_1_recommondation</IRI>
+        <Literal>Asymptomatic Level 1 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Non_symptomatic_level_2_recommondation</IRI>
+        <Literal>Asymptomatic Level 2 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nonsuspected_case</IRI>
+        <Literal>Non Suspected Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nonsymptomic_case</IRI>
+        <Literal>Asymptomatic Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Probabale_case</IRI>
+        <Literal>Covid Probable Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Probable_level_1_recommondation</IRI>
+        <Literal>Probable Level 1 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Probable_level_2_recommondation</IRI>
+        <Literal>Probable Level 2 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Recommondation</IRI>
+        <IRI>#Recommondation</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Risk_level</IRI>
+        <Literal>Risk Level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Risk_level</IRI>
+        <Literal>අවදානම</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Severe</IRI>
+        <Literal>Severe Risk</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Severe</IRI>
+        <Literal>දරුණු</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Severe_Symptom</IRI>
+        <Literal>Severe Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Severe_Symptom</IRI>
+        <Literal>දරුණු රෝගලක්ෂණ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Suspected_case</IRI>
+        <Literal>Covid Suspected Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Suspected_case</IRI>
+        <Literal>සැකසහිත</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Suspected_level_Recommondation</IRI>
+        <Literal>Suspected Level Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Symptom</IRI>
+        <Literal>Symptom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Symptomatic_level_1_recommondation</IRI>
+        <Literal>Symptomatic Level 1 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Symptomatic_level_2_recommondation</IRI>
+        <Literal>Symptomatic Level 2 Recommendation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Symptomic_case</IRI>
+        <Literal>Symptomatic Case</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Travel_History</IRI>
+        <Literal xml:lang="en">Travel History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vaccination_Level_1</IRI>
+        <Literal>Fully Vaccinated with booster dose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Vaccination_Level_2</IRI>
+        <Literal>Not vaccinated or half vaccinated</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

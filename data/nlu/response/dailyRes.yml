@@ -1,0 +1,67 @@
+version: "3.0"
+responses:
+  utter_todaydeath:
+  - text: |
+      අද දවසේ ශ්‍රී ලංකාවේ කොවිඩ් මරණ සංඛ්‍යාව {count} කි.({time})
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+
+  utter_todaypositivecase:
+  - text: |
+      අද දවසේ ශ්‍රී ලංකාවේ පොසිටිව් වූ සංඛ්‍යාව {localnewcases} කි.({time})
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+
+  utter_totalpositivecase:
+  - text: |
+      ශ්‍රී ලංකාවේ සමස්ත පොසිටිව් රෝගීන් සංඛ්‍යාව {time} දිනට {localtotalcases} කි.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+
+  utter_totaldeath:
+  - text: |
+      ශ්‍රී ලංකාවේ {time} දින වන විට වාර්තා වී ඇති සමස්ත කොවිඩ් මරණ සංඛ්‍යාව {localdeaths} කි.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+  
+  utter_individualsinhospital:
+  - text: |
+      ශ්‍රී ලංකාවේ {time} දින වන විට රෝහල්ගත කර සිටින සමස්ථ කොවිඩ් රෝගීන් ගණන {localtotalnumberofindividualsinhospitals} වේ.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+
+  utter_localrecovered:
+  - text: |
+      ශ්‍රී ලංකාවේ {time} දින වන විට කොවිඩ් රෝගයෙන් සුවය ලැබූවන් ගණන {localrecovered} වේ.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+  
+  utter_pcrcount:
+  - text: |
+      ශ්‍රී ලංකාවේ {time} දින වන විට සිදු කළ සමස්ථ පී සී ආර් සංඛ්‍යාව {totalpcrtestingcount} කි.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+
+  utter_activecase:
+  - text: |
+      ශ්‍රී ලංකාවේ {time} දින වන විට කොවිඩ් ආසාදනය වී ප්‍රතිකාර ලබන රෝගීන් සංඛ්‍යාව {localactivecases} කි.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+
+
+  utter_globalactivecase:
+  - text: |
+      ලෝකයේ {time} දින වන විට, වාර්තා වී ඇති සමස්ථ කොවිඩ් රෝගීන් සංඛ්‍යාව {globalactivecases} කි.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+  
+  utter_globalnewcase:
+  - text: |
+      අද දිනට ලෝකය පුරා හඳුනාගත් නව කොවිඩ් ආසාදිතයන්ගේ ප්‍රමාණය {globalnewcases} වේ.({time})
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+  
+  utter_globaltotaldeath:
+  - text: |
+      ලෝකයේ {time} දින වන විට, කොවිඩ් හේතුවෙන් මිය ගිය සංඛ්‍යාව  {globaldeths} කි.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+  
+  utter_globalnewdeaths:
+  - text: |
+      අද දිනය තුල ලෝකයේ වාර්තා වූ කොවිඩ් මරණ සංඛ්‍යාව {globalnewdeath} වේ.({time})
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.
+  
+  utter_globalrecovary:
+  - text: |
+      ලෝකයේ {time} දින වන විට, කොවිඩ් වයිරසයෙන් දැනට සුවය ලබා ඇති මිනිසුන් ගණන {globalrecovery} වේ.
+      මූලාශ්‍ර - https://hpb.health.gov.lk/covid19-dashboard/.

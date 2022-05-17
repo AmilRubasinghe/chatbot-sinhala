@@ -1,0 +1,410 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - moodgreat
+  - moodunhappy
+  - bot_challenge
+  - askfaqlanguages
+  - askhowdoing
+  - askisbot
+  - askwhatismyname
+  - askwhatspossible
+  - askwhoami
+  - askwhoisit
+  - canthelp
+  - explain
+  - handleinsult
+  - nicetomeeyou
+  - thank
+  - blameBot
+
+  - request_recomandation
+  - stop
+  - check_symtoms
+  - inform_symtoms_submit
+  - yes_correct
+  - no_correct
+  - yes_return
+  - no_return
+  - yes_vacinated
+  - no_vacinated
+  - positive
+  - negative
+  - dont_get_result
+  - dont_do
+  - yes_close
+  - no_close
+  - dont_know_close
+  - yes_travel
+  - no_travel
+  - dont_know_travel
+
+  - todaydeath
+  - todaypositivecase
+  - totalpositivecase
+  - totaldeath
+  - individualsinhospital
+  - localrecovered
+  - pcrcount
+  - activecase
+  - globalActivecase
+  - globaldeathcase
+  - globalnewdeath
+  - globalnewcase
+  - globalrecovery
+
+  - mohfulldetails:
+      use_entities: []
+  - askmoh
+  - mohintown:
+      use_entities: []
+  - phifulldetails:
+      use_entities: []
+  - askphi
+  - faq
+  - general
+
+
+
+entities:
+  - return_to_srilanka
+  - rat_test
+  - close_contact
+  - high_transmitted
+  - fully_vacinated
+  - sore_throat
+  - fever
+  - cough
+  - headache
+  - loss_taste
+  - aches_pains
+  - diarrhea
+  - shortness_breath
+  - confusion
+  - chest_pain
+  - bluish_lips
+  - trouble_staying
+  - none
+  - city
+
+slots:
+  return_to_srilanka:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: return_to_srilanka
+
+  rat_test:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: rat_test
+      # intent: [inform, request_restaurant]
+  
+  close_contact:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: close_contact
+
+  high_transmitted:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: high_transmitted
+
+  fully_vacinated:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: fully_vacinated
+
+  sore_throat:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: sore_throat
+
+  fever:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: fever
+
+  cough:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: cough
+
+  headache:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: headache
+
+  loss_taste:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: loss_taste
+
+  aches_pains:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: aches_pains
+
+  diarrhea:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: diarrhea
+
+  shortness_breath:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: shortness_breath
+
+  confusion:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: confusion
+
+  chest_pain:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: chest_pain
+
+  bluish_lips:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: bluish_lips
+
+  trouble_staying:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: trouble_staying
+
+  city:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: city
+
+forms:
+  recomondation_form:
+    # ignored_intents:
+    # - chitchat
+    required_slots:
+      - return_to_srilanka
+      - rat_test
+      - close_contact
+      - fully_vacinated
+      - high_transmitted
+
+responses:
+  utter_out_of_scope:
+  - text: සමාවන්න, මට එම ඉල්ලීම ඉටු කළ නොහැක.
+
+  utter_please_rephrase:
+  - text: මට සමාවෙන්න, මට ඒක හරියට තේරුණේ නැහැ. ඔබට නැවත සදහන් කරන්න පුළුවන්ද?
+
+  utter_greet:
+  - text: "ආයුබෝවන්! මම AI Mind කණ්ඩායමේ සිංහල චැට්බොට් වරයායි.මට කොවිඩ්-19 රෝගය පිළිබඳව ඇති ප්‍රශ්න හා දැනට පවතින ගෝලීය තත්වය පිළිබඳ ඇති ගැටලු වලට පිළිතුරු ලබාදිය හැක."
+
+  utter_did_that_help:
+  - text: "සාකච්ඡාව ආරම්භ කිරීමට සූදානම් ද?"
+
+  utter_what_you_want:
+  - text: "ඔබට දැනගැනීමට අවශ්‍ය කුමක් ගැනද?"
+
+  utter_goodbye:
+  - text: "බායි 👋"
+  - text: "ආයුබෝවන් ආයෙත් එන්න"
+
+  utter_bot_language:
+  - text: "මම AImind covid bot🙂, මට ඉංග්‍රීසි සහ සිංහල භාෂාව තේරුම් ගත හැකිය"
+
+  utter_bot_happy:
+  - text: "මම චැට් බොට් කෙනෙක්, මම හැමදාම සතුටින් ඉන්නේ🙂"
+
+  utter_iamabot:
+  - text: "මම AiMinds කණ්ඩායම විසින් නිර්මාණය කරන ලද bot කෙනෙක්🙂"
+
+  utter_botname:
+  - text: "මම AiMinds කණ්ඩායම විසින් නිර්මාණය කරන ලද AImind covid bot කෙනෙක්🙂" 
+
+  utter_ido:
+  - text: "මම කොවිඩ් ආශ්‍රිත ප්‍රශ්න වලට උදව් කරන බොට් කෙනෙක්"
+
+  utter_bot_to_blame:
+  - text: "ඔබ සාමකාමී අයෙකු විය හැකිද?"
+
+  utter_nice_to_meet:
+  - text: "ඔයාව හමුවීම සතුටක්. නැවත එන්න"
+
+  utter_thanks:
+  - text: "ස්තුතියි. නැවත එන්න"
+
+  utter_happy:
+  - text: "නියමයි, ඉදිරියට යන්න!🙂"
+
+  utter_ask_continue:
+  - text: "ඔබට ඉදිරියට කරගෙන යාමට අවශ්‍යද?"
+
+  utter_few_question:
+  - text: "ඔබට දරුණු ලෙස රෝගාතූරවීමේ අවදාානම ඇතිද යන්න අප විසින් නිර්ණය කිරීම සඳහා ප්‍රශ්නවලට පිළිතුරු සපයන ලෙස ඉල්ලා සිටිනු ඇත. තමා හට COVID-19 ආසාාදනයවී ඇතිද යන්න දැන ගැනීම සඳහා රැපීඩ් ඇන්ටිජන් පරීක්‍ෂණයේ (RAT) හෝ PCR පරීක්‍ෂණයේ ප්‍රතිඵල උපයෝගී කර ගත හැක.\n 1390 HBCS Patient Portal හි ලියාපදිංංචි වන්න, ඒ මගින් ඔබගේ COVID-19 අවදානම මත වැදගත් සෞඛ්‍යයය රැකවරණ උපකාර සහ උපදෙස් සමඟ සම්බන්ධ විය හැකිය. \n \n
+          https://selfregister.wavenet-solutions.com/covid/hbcs/registration/login"
+
+  utter_what_syptoms:
+  - text: "ඔබට දරුණු ලෙස රෝගාතූරවීමේ අවදාානම ඇතිද යන්න අප විසින් නිර්ණය කිරීම සඳහා ප්‍රරශ්නවලට පිළිතුරු සපයන ලෙස ඉල්ලා සිටිනු ඇත. පහත සඳහන් රෝග ලක්ෂණ අතරින් ඔබ සතුව පෙන්නුම් කරන රෝග ලක්ෂණ තෝරා අවසානයේ තහවුරු කරන්න"
+    button_type: vertical
+    buttons:
+    - title: "උගුරෙ ආසාදනය"
+      payload: /check_symtoms{{"sore_throat":"Sore throat"}}
+    - title: "උණ"
+      payload: /check_symtoms{{"fever":"fever"}}
+    - title: "කැස්ස"
+      payload: /check_symtoms{{"cough":"cough"}}
+    - title: "හිසරදය"
+      payload: /check_symtoms{{"headache":"headache"}}
+    - title: "සුවඳ හෝ රස දැනීම අඩුවීම"
+      payload: /check_symtoms{{"loss_taste":"loss of taste or smell"}}
+    - title: "හන්දිපත් රුදාව"
+      payload: /check_symtoms{{"aches_pains":"Aches and pains"}}
+    - title: "පාචනය"
+      payload: /check_symtoms{{"diarrhea":"Diarrhea"}}
+    - title: "හුස්ම කෙටිවීම"
+      payload: /check_symtoms{{"shortness_breath":"Shortness of breath"}}
+    - title: "වියාකූල බව"
+      payload: /check_symtoms{{"confusion":"Confusion"}}
+    - title: "පපුවේ වේදනාව"
+      payload: /check_symtoms{{"chest_pain":"Chest pain"}}
+    - title: "තොල් දම් පැහැ වීම"
+      payload: /check_symtoms{{"bluish_lips":"Bluish lips"}}
+    - title: "නිදිමත ගතිය"
+      payload: /check_symtoms{{"trouble_staying":"Trouble staying awake"}}
+    - title: "ඉහත රෝග ලක්ෂණ නැත"
+      payload: /check_symtoms{{"none":"None"}}
+
+    - title: "තහවුරු කරන්න"
+      payload: /inform_symtoms_submit
+
+  utter_check_correct_symtoms:
+  - text: "\nඔබ ඇතුලත් කර ඇති රෝග ලක්ෂණ නිවැරදි බව ඔබට විශ්වාසද?"
+    buttons:
+    - title: "ඔව්, තහවුරුයි"
+      payload: /yes_correct
+    - title: "නෑ, නැවත තෝරන්න"
+      payload: /no_correct
+
+  utter_ask_return_to_srilanka:
+  - text: "\nඔබ පසුගිය දින 14 ඇතුළත ඕනෑම රටක සිට ශ්‍රී ලංකාවට පැමිණි අයෙක්ද?"
+    buttons:
+    - title: "ඔව්"
+      payload: /yes_return{{"return_to_srilanka":"yes"}}
+    - title: "නැහැ"
+      payload: /no_return{{"return_to_srilanka":"no"}}
+
+  utter_ask_fully_vacinated:
+  - text: "\nඔබ Covid-19 සඳහා සම්පූර්ණයෙන්ම එන්නත් කර තිබේද?"
+    buttons:
+    - title: "ඔව්"
+      payload: /yes_vacinated{{"fully_vacinated":"yes"}}
+    - title: "නැහැ"
+      payload: /no_vacinated{{"fully_vacinated":"no"}}
+
+  utter_ask_rat_test:
+  - text: "\nඔබ පසුගිය දින 5 ඇතුළත වේගවත් ප්‍රතිදේහජනක(RAT) පරීක්ෂණයක් හෝ PCR පරීක්ෂණයක් කළාද?"
+    buttons:
+    - title: "පොසිටිව්"
+      payload: /positive{{"rat_test":"Positive"}}
+    - title: "නෙගටිව්"
+      payload: /negative{{"rat_test":"Negative"}}
+    - title: "තාම ප්‍රතිඵල ලැබුනේ නැත"
+      payload: /dont_get_result{{"rat_test":"Dont get result yet"}}
+    - title: "පරීක්ෂණය කළේ නැහැ"
+      payload: /dont_do{{"rat_test":"Didnt do"}}
+  
+  utter_ask_close_contact:
+  - text: "\nරෝග ලක්ෂණ ආරම්භ වීමට පෙර පසුගිය දින 7 තුළ ඔබට තහවුරු වූ හෝ සැක කරන ලද COVID-19 පුද්ගලයෙකු සමඟ සමීප සම්බන්ධතාවක් තිබේද? (සමීප සම්බන්ධතා: සංවෘත පරිසරයක විනාඩි 15ක් රැඳී සිටින අයෙක් (උදා. එකම නිවසක/වැඩබිම/සමාජ රැස්වීම්/එකම වාහනයක ගමන් කිරීම) හෝ සෘජු ශාරීරික සම්බන්ධතා පැවැත්වූ අයෙක්)"
+    buttons:
+    - title: "ඔව්"
+      payload: /yes_close{{"close_contact":"yes"}}
+    - title: "නැහැ"
+      payload: /no_close{{"close_contact":"no"}}
+    - title: "මම දන්නේ නැත"
+      payload: /dont_know_close{{"close_contact":"dont know"}}
+
+  utter_ask_high_transmitted:
+  - text : "\nරෝග ලක්ෂණ ආරම්භ වීමට පෙර දින 7 තුළ ඔබ කොවිඩ්-19 රෝගය අධික ලෙස සම්ප්‍රේෂණය වන ප්‍රදේශයක් ලෙස නම් කර ඇති ස්ථානයක සංචාරය කර හෝ පදිංචි වී සිටියාද?"
+    buttons:
+    - title: "ඔව්"
+      payload: /yes_travel{{"high_transmitted":"yes"}}
+    - title: "නැහැ"
+      payload: /no_travel{{"high_transmitted":"no"}}
+    - title: "මම දන්නේ නැත"
+      payload: /dont_know_travel{{"high_transmitted":"dont know"}}
+
+  utter_mohintown:
+  - text: "ඔබට දැන ගැනීමට අවශ්‍ය වන්නේ කුමන දිස්ත්‍රික් සෞඛ්‍ය වෛද්‍ය නිලධාරී(moh) කාර්යාලය ගැනද?"
+
+  utter_phiintown:
+  - text: "ඔබට දැන ගැනීමට අවශ්‍ය වන්නේ කුමන දිස්ත්‍රික්කයේ මහජන සෞඛ්‍ය පරීක්ෂකවරයන්ගේ විස්තරද?"
+
+actions:
+- action_ontalogy_tracker
+- action_symptom_list
+- action_correct_symtoms
+- action_clear_symptom_list
+
+- action_today_positive_case
+- action_total_positive_case
+- action_total_death
+- action_individuals_in_hospital
+- action_daily_Today_Deades
+- action_local_recovered
+- action_pcr_count
+- action_active_case
+- action_global_total_active_case
+- action_global_new_active_case
+- action_global_total_death
+- action_global_new_death
+- action_global_recovary
+- action_database_tracker
+- action_phiDatabase_tracker
+
+
+
+session_config:
+  session_expiration_time: 100
+  carry_over_slots_to_new_session: true
+

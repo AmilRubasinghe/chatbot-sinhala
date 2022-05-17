@@ -1,0 +1,24 @@
+version: "3.0"
+stories:
+  - story: stop form + continue
+    steps:
+      - intent: yes_correct
+      - action: recomondation_form
+      - active_loop: recomondation_form
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: recomondation_form
+      - active_loop: null
+      - action: action_ontalogy_tracker
+
+  - story: stop form + stop
+    steps:
+      - intent: yes_correct
+      - action: recomondation_form
+      - active_loop: recomondation_form
+      - intent: stop
+      - action: utter_ask_continue
+      - intent: deny
+      - action: action_deactivate_loop
+      - active_loop: null

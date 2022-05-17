@@ -1,0 +1,167 @@
+version: "3.0"
+stories:
+  - story: storytodaypositivecase
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: todaypositivecase
+    - action: action_today_positive_case
+
+  - story: storytotalpositivecase
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: totalpositivecase
+    - action: action_total_positive_case
+
+  - story: storytotaldeath
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: totaldeath
+    - action: action_total_death
+
+  - story: storyindividualsinhospital
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: individualsinhospital
+    - action: action_individuals_in_hospital
+
+  - story: storylocalrecovered
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: localrecovered
+    - action: action_local_recovered
+
+  - story: storytodaydeath
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: todaydeath
+    - action: action_daily_Today_Deades
+
+  - story: storypcrcount
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: pcrcount
+    - action: action_pcr_count
+
+  - story: storyactivecase
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: activecase
+    - action: action_active_case
+
+  - story: storytodaypositivecase
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: todaypositivecase
+    - action: action_today_positive_case
+    - intent: totalpositivecase
+    - action: action_total_positive_case
+    - intent: totaldeath
+    - action: action_total_death
+    - intent: individualsinhospital
+    - action: action_individuals_in_hospital
+    - intent: localrecovered
+    - action: action_local_recovered
+    - intent: todaydeath
+    - action: action_daily_Today_Deades
+    - intent: pcrcount
+    - action: action_pcr_count
+    - intent: activecase
+    - action: action_active_case
+    - intent: globalActivecase
+    - action: action_global_total_active_case
+    - intent: globalnewcase
+    - action: action_global_new_active_case
+    - intent: globaldeathcase
+    - action: action_global_total_death
+    - intent: globalnewdeath
+    - action: action_global_new_death
+    - intent: globalrecovery
+    - action: action_global_recovary
+
+
+
+  - story: storyglobalactive
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: globalActivecase
+    - action: action_global_total_active_case
+
+  - story: storyglobalnewactive
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: globalnewcase
+    - action: action_global_new_active_case
+
+  - story: storyglobaldeath
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: globaldeathcase
+    - action: action_global_total_death
+
+  - story: storyglobalnewdeath
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: globalnewdeath
+    - action: action_global_new_death
+
+  - story: storyglobalrecovery
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_what_you_want
+    - intent: globalrecovery
+    - action: action_global_recovary
