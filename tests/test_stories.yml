@@ -5,87 +5,178 @@ stories:
 - story: happy path 1
   steps:
   - user: |
-      hello there!
+      හලෝ
     intent: greet
   - action: utter_greet
+  - action: utter_did_that_help
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      ඔව්
+    intent: affirm
+  - action: utter_what_you_want
 
 - story: happy path 2
   steps:
   - user: |
-      hello there!
+      සුබ උදෑසනක්
     intent: greet
   - action: utter_greet
+  - action: utter_did_that_help
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      ඇත්ත වශයෙන්
+    intent: affirm
+  - action: utter_what_you_want
   - user: |
-      bye-bye!
+      පසුව හමුවමු
     intent: goodbye
   - action: utter_goodbye
 
-- story: sad path 1
-  steps:
-  - user: |
-      hello
-    intent: greet
-  - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
 
 - story: sad path 2
   steps:
   - user: |
-      hello
+      හාය්
     intent: greet
   - action: utter_greet
-  - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      not really
+      කවදාවත් නැත
     intent: deny
   - action: utter_goodbye
 
 - story: sad path 3
   steps:
   - user: |
-      hi
+      ආයුබෝවන්
     intent: greet
   - action: utter_greet
-  - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
   - action: utter_did_that_help
   - user: |
-      no
+      නැත
     intent: deny
   - action: utter_goodbye
 
 - story: say goodbye
   steps:
   - user: |
-      bye-bye!
+      යන්නම්
     intent: goodbye
   - action: utter_goodbye
 
 - story: bot challenge
   steps:
   - user: |
-      are you a bot?
-    intent: bot_challenge
+      ඔයා කවුද
+    intent: askwhoisit
   - action: utter_iamabot
+
+- story: happy path 4
+  steps:
+  - user: |
+     ඔබට කොහොමද
+    intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - user: |
+      එකෙන්ම
+    intent: affirm
+  - action: utter_what_you_want
+  - user: |
+      මෙම චැට්බොට් වැඩ කරන භාෂා මොනවාද
+    intent: askfaqlanguages
+  - action: utter_bot_language
+
+- story: sad path 5
+  steps:
+  - user: |
+     සුභ දවාලක්
+    intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - user: |
+      ඇත්ත වශයෙන්
+    intent: affirm
+  - action: utter_what_you_want
+  - user: |
+      ඔබ බුද්ධිමත් නැහැ
+    intent: blameBot
+  - action: utter_bot_to_blame
+
+- story: happy path 5
+  steps:
+  - user: |
+     අඩෝ
+    intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - user: |
+      ඇත්ත වශයෙන්ම
+    intent: affirm
+  - action: utter_what_you_want
+  - user: |
+      මම කවුද
+    intent: askwhatismyname
+  - action: utter_botname
+  - user: |
+      බායි
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 6
+  steps:
+  - user: |
+     හෙලෝ
+    intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - user: |
+      ඔව්
+    intent: affirm
+  - action: utter_what_you_want
+  - user: |
+      මම කවුද කියලා දන්නවද
+    intent: askwhatismyname
+  - action: utter_botname
+  - user: |
+      පස්සෙ හමුවෙමු
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 7
+  steps:
+  - user: |
+     මොකෝ වෙන්නේ
+    intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - user: |
+      ඔබ නිවැරදි
+    intent: affirm
+  - action: utter_what_you_want
+  - user: |
+      අද කොවිඩ් මරණ කීයද
+    intent: todaydeath
+  - action: action_total_death
+  - user: |
+      යන්නම්
+    intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path 8
+  steps:
+  - user: |
+     හෙලො
+    intent: greet
+  - action: utter_greet
+  - action: utter_did_that_help
+  - user: |
+      හරි
+    intent: affirm
+  - action: utter_what_you_want
+  - user: |
+      what is corona
+    intent: todaydeath
+  - action: utter_todaydeath
+  - user: |
+      bye
+    intent: goodbye
+  - action: utter_goodbye

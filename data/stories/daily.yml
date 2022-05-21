@@ -165,3 +165,68 @@ stories:
     - action: utter_what_you_want
     - intent: globalrecovery
     - action: action_global_recovary
+
+  - story: storypositive
+    steps:
+    - intent: todaypositivecase
+    - action: action_today_positive_case
+    
+  - story: storyallpositive
+    steps:
+    - intent: totalpositivecase
+    - action: action_total_positive_case
+    
+  - story: storyalldeath
+    steps:
+    - intent: totaldeath
+    - action: action_total_death
+  
+  - story: storyallindividual
+    steps:
+    - intent: individualsinhospital
+    - action: action_individuals_in_hospital
+    
+  - story: storyrecovery
+    steps:
+    - intent: localrecovered
+    - action: action_local_recovered
+    
+  - story: storydeath
+    steps:
+    - intent: todaydeath
+    - action: action_daily_Today_Deades
+    
+  - story: storypcr
+    steps:
+    - intent: pcrcount
+    - action: action_pcr_count
+    
+  - story: storyactive
+    steps:
+    - intent: activecase
+    - action: action_active_case
+
+  - story: storyworldactive
+    steps:
+    - intent: globalActivecase
+    - action: action_global_total_active_case
+
+  - story: storyworldnew
+    steps:
+    - intent: globalnewcase
+    - action: action_global_new_active_case
+  
+  - story: storyworlddeath
+    steps:
+    - intent: globaldeathcase
+    - action: action_global_total_death
+  
+  - story: storyworldnewdeath
+    steps:
+    - intent: globalnewdeath
+    - action: action_global_new_death
+
+  - story: storyworldrecovery
+    steps:
+    - intent: globalrecovery
+    - action: action_global_recovary
