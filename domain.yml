@@ -17,7 +17,6 @@ intents:
   - askwhoisit
   - canthelp
   - explain
-  - handleinsult
   - nicetomeeyou
   - thank
   - blameBot
