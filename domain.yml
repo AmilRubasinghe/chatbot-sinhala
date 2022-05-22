@@ -385,7 +385,6 @@ actions:
 - action_symptom_list
 - action_correct_symtoms
 - action_clear_symptom_list
-
 - action_today_positive_case
 - action_total_positive_case
 - action_total_death
@@ -401,8 +400,6 @@ actions:
 - action_global_recovary
 - action_database_tracker
 - action_phiDatabase_tracker
-
-
 
 session_config:
   session_expiration_time: 100
