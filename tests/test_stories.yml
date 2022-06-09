@@ -173,10 +173,10 @@ stories:
     intent: affirm
   - action: utter_what_you_want
   - user: |
-      what is corona
-    intent: todaydeath
-  - action: utter_todaydeath
+      කොවිඩ් කියන්නෙ කුමක්ද
+    intent: faq/what_corona
+  - action: utter_faq/what_corona
   - user: |
-      bye
+      යන්නම්
     intent: goodbye
   - action: utter_goodbye
